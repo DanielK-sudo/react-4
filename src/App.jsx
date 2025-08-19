@@ -15,10 +15,10 @@ function App() {
       return;
     }
 
-    // приводим введённое название к нижнему регистру
+  
     const city = cityName.trim().toLowerCase();
 
-    // создаём словарь городов тоже в нижнем регистре
+    
     const normalizedData = Object.keys(weatherData).reduce((acc, key) => {
       acc[key.toLowerCase()] = weatherData[key];
       return acc;
